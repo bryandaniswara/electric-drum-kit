@@ -1,3 +1,3 @@
 # electric-drum-kit
 
-http://electric-drum-kit.app.bryandaniswara.com/
+https://electric-drum-kit.app.bryandaniswara.com/
