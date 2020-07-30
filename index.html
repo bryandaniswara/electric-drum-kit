@@ -13,62 +13,99 @@
 				<h1>Electric Drum Kit</h1>
 
 				<div class="navbar__right">
-					<a href="https://github.com/bryandaniswara/electric-drum-kit" target="_blank"><img src="/assets/img/GitHub-Mark-120px-plus.png" alt="" srcset="" /></a>
-					<img id="settings-icon" src="/assets/img/gear.png" alt="" srcset="" />
+					<a href="https://github.com/bryandaniswara/electric-drum-kit" target="_blank"><img src="./assets/img/GitHub-Mark-120px-plus.png" alt="" srcset="" /></a>
+					<img id="settings-icon" src="./assets/img/gear.png" alt="" srcset="" />
 				</div>
 			</nav>
 		</header>
 
-		<section class="settings"></section>
+		<section class="settings">
+			<div class="settings__content">
+				<span class="settings__close">&times;</span>
+				<div class="title"><h1>Choose color</h1></div>
+				<div class="wrapper">
+					<div class="box-grey"></div>
+					<div class="box-darken-grey"></div>
+				</div>
+				<button id="set">Set</button>
+				<button id="reset">Reset</button>
+				<div class="info">your choosen color will be stored at browser local storage</div>
+			</div>
+		</section>
 
-		<aside class="credits">credits</aside>
+		<div class="credits-button">credits</div>
+
+		<aside class="credits">
+			<div class="credits__content">
+				<span class="credits__close">&times;</span>
+				<a target="_blank" href="https://www.freepik.com/free-vector/black-carbon-fiber-pattern-texture_5701160.htm">Background carbon pattern vector created by starline - www.freepik.com</a>
+				<div>
+					<a href="https://www.flaticon.com/free-icon/gear_889744">Icons gear made by</a> <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from
+					<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+				</div>
+				<div>Drum sounds by <a href="https://99sounds.org/drum-samples/">99sounds</a></div>
+			</div>
+		</aside>
 
 		<main>
 			<div class="keys">
-				<div class="keys__key">
+				<div data-key="65" class="keys__key">
 					<p class="keys__key__button">[A]</p>
 					<p class="keys__key__name">clap</p>
 				</div>
-				<div class="keys__key">
+				<div data-key="83" class="keys__key">
 					<p class="keys__key__button">[S]</p>
 					<p class="keys__key__name">hihat</p>
 				</div>
-				<div class="keys__key">
+				<div data-key="68" class="keys__key">
 					<p class="keys__key__button">[D]</p>
 					<p class="keys__key__name">kick</p>
 				</div>
-				<div class="keys__key">
+				<div data-key="70" class="keys__key">
 					<p class="keys__key__button">[F]</p>
 					<p class="keys__key__name">openhat</p>
 				</div>
-				<div class="keys__key">
+				<div data-key="71" class="keys__key">
 					<p class="keys__key__button">[G]</p>
 					<p class="keys__key__name">boom</p>
 				</div>
-				<div class="keys__key">
+				<div data-key="72" class="keys__key">
 					<p class="keys__key__button">[H]</p>
 					<p class="keys__key__name">ride</p>
 				</div>
-				<div class="keys__key">
+				<div data-key="74" class="keys__key">
 					<p class="keys__key__button">[J]</p>
 					<p class="keys__key__name">snare</p>
 				</div>
-				<div class="keys__key">
+				<div data-key="75" class="keys__key">
 					<p class="keys__key__button">[K]</p>
 					<p class="keys__key__name">tom</p>
 				</div>
-				<div class="keys__key">
+				<div data-key="76" class="keys__key">
 					<p class="keys__key__button">[L]</p>
 					<p class="keys__key__name">tink</p>
 				</div>
 			</div>
 
 			<div class="display">
-				<p class="display__history">clap</p>
-				<p class="display__history">hihat</p>
-				<p class="display__history">boom</p>
-				<p class="display__now">kick</p>
+				<div class="wrong-button"><p>Wrong button!</p></div>
+				<p class="display__history3"></p>
+				<p class="display__history2"></p>
+				<p class="display__history1"></p>
+				<p class="display__now"></p>
 			</div>
 		</main>
+
+		<audio data-key="65" src="./assets/sounds/clap.wav"></audio>
+		<audio data-key="83" src="./assets/sounds/hihat.wav"></audio>
+		<audio data-key="68" src="./assets/sounds/kick.wav"></audio>
+		<audio data-key="70" src="./assets/sounds/openhat.wav"></audio>
+		<audio data-key="71" src="./assets/sounds/boom.wav"></audio>
+		<audio data-key="72" src="./assets/sounds/ride.wav"></audio>
+		<audio data-key="74" src="./assets/sounds/snare.wav"></audio>
+		<audio data-key="75" src="./assets/sounds/tom.wav"></audio>
+		<audio data-key="76" src="./assets/sounds/tink.wav"></audio>
+
+		<script src="main.js"></script>
 	</body>
 </html>
